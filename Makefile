@@ -18,7 +18,7 @@ thesis-full.pdf: thesis.pdf title.pdf specification.pdf annotation.pdf
 thesis-samarin.pdf: 
 	bash create-antiplagiat-pdf.sh
 
-all: thesis-full.pdf thesis-samarin.pdf
+all: thesis-full.pdf thesis-samarin.pdf supervisor.pdf advisor.pdf
 
 clean:
 	rm -f title.pdf specification.pdf annotation.pdf thesis.pdf thesis-full.pdf thesis-samarin.pdf
