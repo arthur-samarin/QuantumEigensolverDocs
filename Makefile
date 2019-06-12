@@ -15,7 +15,7 @@ thesis.pdf: thesis.odt
 thesis-full.pdf: thesis.pdf title.pdf specification.pdf annotation.pdf
 	pdftk title.pdf specification.pdf annotation.pdf thesis.pdf cat output thesis-full.pdf
 
-thesis-samarin.pdf: 
+thesis-samarin.pdf: thesis.pdf title.pdf specification.pdf annotation.pdf
 	bash create-antiplagiat-pdf.sh
 
 all: thesis-full.pdf thesis-samarin.pdf supervisor.pdf advisor.pdf
