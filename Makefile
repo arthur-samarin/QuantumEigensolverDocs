@@ -6,7 +6,7 @@ annotation.pdf: annotation.odt
 specification.pdf: specification.odt
 	soffice --headless --convert-to pdf specification.odt
 	
-title.pdf: annotation.odt
+title.pdf: title.odt
 	soffice --headless --convert-to pdf title.odt
 	
 thesis.pdf: thesis.odt
